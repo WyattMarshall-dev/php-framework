@@ -1,0 +1,241 @@
+/* 
+
+#: Imports
+#: Universal
+    #: Resets
+    #: Classes
+#: Navigation
+#: Main Content
+#: Footer
+
+*/
+
+@import '/includes/css/blog.css';
+@import '/includes/css/footer.css';
+@import '/includes/css/hero.css';
+@import '/includes/css/navbar.css';
+
+/* === UNIVERSAL : RESETS === */
+
+:root {
+    /* Universals */
+    --main-bg-color: #ddd;
+    --nav-bg-color: #111;
+    --footer-bg-color: black;
+    --main-text-color: black;
+    --nav-link-color: white;
+    --nav-active-link-bg-color: black;
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+}
+
+a, a:visited, a:active, a:link {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+a.active {
+    /* background-color: var(--nav-active-link-bg-color); */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 { font-size: 2rem;   }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem;   }
+
+button{
+    background-color: aqua;
+    border: none;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* === UNIVERSAL : CLASSES === */
+
+.container {
+    width: 90%;
+    max-width: 1024px;
+    word-wrap: break-word;
+    margin:  auto;
+}
+
+.btn {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-blue:hover{
+    background-color: rgb(0, 220, 220);
+    color: white;
+}
+
+.mb-1 { margin-bottom: 1rem;    }
+.mb-2 { margin-bottom: 2rem;    }
+.mb-3 { margin-bottom: 3rem;    }
+.mb-4 { margin-bottom: 4rem;    }
+.mt-1 { margin-top: 1rem;       }
+.mt-2 { margin-top: 2rem;       }
+.mt-3 { margin-top: 3rem;       }
+.mt-4 { margin-top: 4rem;       }
+
+
+/* === LOGIN FORM === */
+.form-container {
+    margin: auto;
+    padding: 10px;
+    max-width: max-content;
+}
+
+.form-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.form-input {
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-label {
+    margin-right: 5px;
+}
+
+.form-submit {
+    padding: 5px 10px;
+    text-align: right;
+}
+
+#pageLinks{
+    margin-top: 25px;
+}
+
+#blog-div {
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+/* === MAIN CONTENT === */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1199px) { 
+    .container {
+        width: 100%;
+        word-wrap: break-word;
+        margin:  auto;
+    }
+    #main-content {
+        flex-grow: 1;
+        min-height: 90vh;
+    }    
+    
+    #section-1 {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ddd;
+    }
+    
+    #sub-grid {
+        background-color: #222;
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+}
+/* 
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+    
+}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+    
+}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+
+} 
+*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #main-content {
+        flex-grow: 1;
+        /* border: 1px solid gray; */
+    }
+    
+    #section-1 {
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: -50px;
+        background-color: #ddd;
+        box-shadow: 4px 4px 5px #222, -4px 1px 5px #222;
+    }
+    
+    #sub-grid {
+        background-color: #222;
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+    }    
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 8px 6px -6px black;
+    }
+}

@@ -1,0 +1,100 @@
+/* === FOOTER === */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1199px) { 
+    footer {
+        background-color: var(--footer-bg-color);
+        color: white;
+        min-height: 3rem;
+        margin-top: 25px;
+    }
+    
+    footer > .container {
+        padding-top: 1rem;
+    }
+    
+    .footer-title {
+        /* border: 1px solid blue; */
+        width: 100%;
+        text-align: center;
+        border-bottom: 4px solid aqua;
+    }
+    
+    .footer-item {
+        /* border: 1px solid red; */
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .footer-logo{
+        box-sizing: border-box;
+    }
+
+    #copyright {
+        width: 100%;
+        align-self: center;
+        padding-bottom: 1rem;
+    }
+    
+    #copyright > p {
+        display: block;
+        text-align: center;
+    }
+}
+/* 
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+    
+}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+    
+}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+
+} 
+*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    footer {
+        background-color: var(--footer-bg-color);
+        color: white;
+        min-height: 3rem;
+        margin-top: 25px;
+    }
+    
+    footer > .container {
+        padding-top: 1rem;
+    }
+    
+    #copyright {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding-bottom: 1rem;
+    }
+    
+    #copyright > p {
+        display: block;
+    }
+    
+    .footer-title {
+        width: max-content;
+        padding-right: 2rem;
+        border-bottom: 4px solid aqua;
+    }
+    
+    .footer-item {
+        /* border: 1px solid red; */
+        padding: 5px;
+    }
+    
+    .footer-logo{
+        box-sizing: border-box;
+    }
+}
